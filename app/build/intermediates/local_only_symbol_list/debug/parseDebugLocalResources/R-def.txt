@@ -1,0 +1,36 @@
+R_DEF: Internal format may change without notice
+local
+color blue
+color blue_dark
+color danger
+color muted
+color navy
+color surface
+color white
+id capture
+id email
+id error
+id gallery
+id login
+id logout
+id password
+id permissionPanel
+id photo
+id preview
+id requestPermission
+id title
+layout activity_camera
+layout activity_login
+string app_name
+string camera_capture
+string camera_gallery
+string camera_permission_button
+string camera_permission_message
+string camera_title
+string email_hint
+string login_button
+string login_subtitle
+string login_title
+string logout
+string password_hint
+style Theme.Authentification

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#2F6BFF</color>
+    <color name="blue_dark">#1D4ED8</color>
+    <color name="danger">#B42318</color>
+    <color name="muted">#667085</color>
+    <color name="navy">#101828</color>
+    <color name="surface">#F8FAFC</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">Authentification</string>
+    <string name="camera_capture">Prendre une photo</string>
+    <string name="camera_gallery">Sélectionner une image QR</string>
+    <string name="camera_permission_button">Autoriser la caméra</string>
+    <string name="camera_permission_message">L’accès à la caméra est requis pour continuer.</string>
+    <string name="camera_title">Caméra sécurisée</string>
+    <string name="email_hint">Adresse e-mail</string>
+    <string name="login_button">Se connecter</string>
+    <string name="login_subtitle">Connectez-vous pour accéder à votre caméra</string>
+    <string name="login_title">Bienvenue</string>
+    <string name="logout">Se déconnecter</string>
+    <string name="password_hint">Mot de passe</string>
+    <style name="Theme.Authentification" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">@color/blue</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:statusBarColor">@color/surface</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+</resources>

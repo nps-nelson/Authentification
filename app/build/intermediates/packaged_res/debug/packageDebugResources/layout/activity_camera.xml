@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/navy">
+    <androidx.camera.view.PreviewView android:id="@+id/preview" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp" android:background="#66000000">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_title" android:textColor="@color/white" android:textSize="22sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Session authentifiée" android:textColor="#DDFFFFFF" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/permissionPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center" android:gravity="center" android:orientation="vertical" android:padding="28dp" android:visibility="gone">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_permission_message" android:textColor="@color/white" android:textSize="16sp" android:gravity="center" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/requestPermission" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="@string/camera_permission_button" android:textAllCaps="false" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="bottom" android:gravity="center" android:orientation="horizontal" android:padding="24dp" android:background="#66000000">
+        <com.google.android.material.button.MaterialButton android:id="@+id/gallery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Galerie" android:textAllCaps="false" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/capture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:text="Scanner QR" android:textAllCaps="false" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:text="@string/camera_capture" android:textAllCaps="false" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/logout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:text="@string/logout" android:textAllCaps="false" />
+    </LinearLayout>
+</FrameLayout>

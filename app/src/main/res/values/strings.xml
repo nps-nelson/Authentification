@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Authentification</string>
+    <string name="login_title">Bienvenue</string>
+    <string name="login_subtitle">Connectez-vous pour accéder à votre caméra</string>
+    <string name="email_hint">Adresse e-mail</string>
+    <string name="password_hint">Mot de passe</string>
+    <string name="login_button">Se connecter</string>
+    <string name="camera_title">Caméra sécurisée</string>
+    <string name="camera_permission_message">L’accès à la caméra est requis pour continuer.</string>
+    <string name="camera_permission_button">Autoriser la caméra</string>
+    <string name="camera_capture">Prendre une photo</string>
+    <string name="camera_gallery">Sélectionner une image QR</string>
+    <string name="logout">Se déconnecter</string>
+</resources>
