@@ -10,5 +10,5 @@
     <string name="camera_permission_button">Autoriser la caméra</string>
     <string name="camera_capture">Prendre une photo</string>
     <string name="camera_gallery">Sélectionner une image QR</string>
-    <string name="logout">Se déconnecter</string>
+    <string name="logout">Fermer</string>
 </resources>

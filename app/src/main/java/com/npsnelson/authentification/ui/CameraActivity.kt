@@ -20,7 +20,6 @@ import com.google.android.material.button.MaterialButton
 import com.google.mlkit.vision.barcode.BarcodeScanning
 import com.google.mlkit.vision.common.InputImage
 import com.npsnelson.authentification.R
-import com.npsnelson.authentification.data.AuthRepository
 import java.text.SimpleDateFormat
 import java.util.Locale
 import java.util.concurrent.ExecutorService
@@ -46,7 +45,6 @@ class CameraActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        if (!AuthRepository(this).isAuthenticated()) return goToLogin()
         setContentView(R.layout.activity_camera)
         preview = findViewById(R.id.preview)
         permissionPanel = findViewById(R.id.permissionPanel)
@@ -58,7 +56,7 @@ class CameraActivity : AppCompatActivity() {
         photo.setOnClickListener { takePhoto() }
         gallery.setOnClickListener { galleryLauncher.launch("image/*") }
         findViewById<MaterialButton>(R.id.requestPermission).setOnClickListener { permissionLauncher.launch(Manifest.permission.CAMERA) }
-        findViewById<MaterialButton>(R.id.logout).setOnClickListener { AuthRepository(this).logout(); goToLogin() }
+        findViewById<MaterialButton>(R.id.logout).setOnClickListener { finish() }
         if (hasCameraPermission()) startCamera() else showPermissionPanel()
     }
 
@@ -128,6 +126,5 @@ class CameraActivity : AppCompatActivity() {
         })
     }
 
-    private fun goToLogin() { startActivity(Intent(this, LoginActivity::class.java)); finish() }
     override fun onDestroy() { super.onDestroy(); if (::cameraExecutor.isInitialized) cameraExecutor.shutdown() }
 }

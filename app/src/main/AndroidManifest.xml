@@ -7,8 +7,7 @@
         android:label="Authentification"
         android:supportsRtl="true"
         android:theme="@style/Theme.Authentification">
-        <activity android:name=".ui.CameraActivity" android:screenOrientation="portrait" />
-        <activity android:name=".ui.LoginActivity" android:exported="true">
+        <activity android:name=".ui.CameraActivity" android:exported="true" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
